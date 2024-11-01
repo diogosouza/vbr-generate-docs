@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="BuildSystem">
+    <option name="buildSystemId" value="LEININGEN" />
+    <option name="displayName" value="vbr-generate-docs:0.1.0" />
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/dev-resources" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/resources" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/clj" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Leiningen: clj-pdf:2.6.9" level="project" />
+    <orderEntry type="library" name="Leiningen: cljfx:1.9.3" level="project" />
+    <orderEntry type="library" name="Leiningen: cljfx:1.9.3:jdk11" level="project" />
+    <orderEntry type="library" name="Leiningen: com.github.librepdf/openpdf:1.3.32" level="project" />
+    <orderEntry type="library" name="Leiningen: commons-codec:1.15" level="project" />
+    <orderEntry type="library" name="Leiningen: commons-io:1.3.1" level="project" />
+    <orderEntry type="library" name="Leiningen: commons-logging:1.0.4" level="project" />
+    <orderEntry type="library" name="Leiningen: nrepl:1.0.0" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.xmlgraphics/batik-anim:1.17" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.xmlgraphics/batik-awt-util:1.17" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.xmlgraphics/batik-bridge:1.17" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.xmlgraphics/batik-codec:1.17" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.xmlgraphics/batik-constants:1.17" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.xmlgraphics/batik-css:1.17" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.xmlgraphics/batik-dom:1.17" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.xmlgraphics/batik-ext:1.17" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.xmlgraphics/batik-gvt:1.17" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.xmlgraphics/batik-i18n:1.17" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.xmlgraphics/batik-parser:1.17" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.xmlgraphics/batik-script:1.17" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.xmlgraphics/batik-shared-resources:1.17" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.xmlgraphics/batik-svg-dom:1.17" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.xmlgraphics/batik-svggen:1.17" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.xmlgraphics/batik-transcoder:1.17" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.xmlgraphics/batik-util:1.17" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.xmlgraphics/batik-xml:1.17" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.xmlgraphics/xmlgraphics-commons:2.4" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/clojure:1.11.1" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/core.cache:1.1.234" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/core.specs.alpha:0.2.62" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/data.priority-map:1.2.0" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/spec.alpha:0.3.218" level="project" />
+    <orderEntry type="library" name="Leiningen: org.jfree/jfreechart:1.5.0" level="project" />
+    <orderEntry type="library" name="Leiningen: org.nrepl/incomplete:0.1.0" level="project" />
+    <orderEntry type="library" name="Leiningen: org.openjfx/javafx-base:22-ea+16" level="project" />
+    <orderEntry type="library" name="Leiningen: org.openjfx/javafx-base:22-ea+16:mac-aarch64" level="project" />
+    <orderEntry type="library" name="Leiningen: org.openjfx/javafx-controls:22-ea+16" level="project" />
+    <orderEntry type="library" name="Leiningen: org.openjfx/javafx-controls:22-ea+16:mac-aarch64" level="project" />
+    <orderEntry type="library" name="Leiningen: org.openjfx/javafx-graphics:22-ea+16" level="project" />
+    <orderEntry type="library" name="Leiningen: org.openjfx/javafx-graphics:22-ea+16:mac-aarch64" level="project" />
+    <orderEntry type="library" name="Leiningen: org.openjfx/javafx-media:22-ea+16" level="project" />
+    <orderEntry type="library" name="Leiningen: org.openjfx/javafx-media:22-ea+16:mac-aarch64" level="project" />
+    <orderEntry type="library" name="Leiningen: org.openjfx/javafx-web:22-ea+16" level="project" />
+    <orderEntry type="library" name="Leiningen: org.openjfx/javafx-web:22-ea+16:mac-aarch64" level="project" />
+    <orderEntry type="library" name="Leiningen: xml-apis/xml-apis-ext:1.3.04" level="project" />
+    <orderEntry type="library" name="Leiningen: xml-apis:1.4.01" level="project" />
+  </component>
+</module>
