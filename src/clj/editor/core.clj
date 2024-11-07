@@ -399,24 +399,9 @@
                          :fit-to-width true
                          :content      {:fx/type tabs-view}}}}))
 
-;;; App
-(def app
-  (->> (Locale/setDefault (Locale/forLanguageTag "pt-BR"))
-       (fx/create-app *state
-                      :event-handler events/event-handler
-                      :desc-fn (fn [_] {:fx/type root-view}))))
-
-;(fx/mount-renderer
-;  *state
-;  (do
-;    (Locale/setDefault (Locale/of "pt" "BR"))
-;    (fx/create-renderer
-;      :middleware (fx/wrap-map-desc assoc :fx/type root-view)
-;      :opts {:fx.opt/map-event-handler #(swap! *state (map-event-handler %))})))
-
-;(defn -main []
-;  (Locale/setDefault (Locale/of "pt" "BR"))
-;  (fx/mount-renderer *state
-;                     (fx/create-renderer
-;                       :middleware (fx/wrap-map-desc assoc :fx/type root-view)
-;                       :opts {:fx.opt/map-event-handler #(swap! *state (component/map-event-handler %))})))
+;; App
+(defn -main [& _]
+  (Locale/setDefault (Locale/forLanguageTag "pt-BR"))
+  (fx/create-app *state
+                 :event-handler events/event-handler
+                 :desc-fn (fn [_] {:fx/type root-view})))
