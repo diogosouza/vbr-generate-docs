@@ -4,9 +4,9 @@
                  [cljfx "1.9.3"]
                  [org.clojure/core.cache "1.1.234"]
                  [clj-pdf "2.6.9"]]
-  :repl-options {:init-ns vbr-generate-docs.core
+  :repl-options {:init-ns editor.core
                  :init    (require '[clojure.repl :refer :all])}
-  :main ^:skip-aot vbr-generate-docs.core
+  :main ^:skip-aot editor.core
   :source-paths ["src/clj"]
   :target-path "target/%s"
   :profiles {:uberjar {:aot      :all

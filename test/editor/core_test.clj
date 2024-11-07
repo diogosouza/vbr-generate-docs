@@ -1,6 +1,6 @@
-(ns vbr-generate-docs.core-test
+(ns editor.core-test
   (:require [clojure.test :refer :all]
-            [vbr-generate-docs.core :refer :all]))
+            [editor.core :refer :all]))
 
 (deftest a-test
   (testing "FIXME, I fail."
