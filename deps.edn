@@ -3,4 +3,4 @@
         cljfx {:mvn/version "1.9.3"}
         clj-pdf {:mvn/version "2.6.9"}}
  :aliases {:uberjar {:extra-deps {com.github.seancorfield/depstar {:mvn/version "2.1.303"}}
-                     :main-opts ["-m" "hf.depstar.uberjar" "dist/vbr-generate-docs.jar"]}}}
+                     :main-opts ["-m" "hf.depstar.uberjar" "dist/vbr-gerador-docs.jar"]}}}

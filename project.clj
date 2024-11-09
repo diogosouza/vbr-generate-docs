@@ -8,6 +8,6 @@
                  :init    (require '[clojure.repl :refer :all])}
   :main editor.core
   :target-path "dist"
-  :uberjar-name "vbr-generate-docs.jar"
+  :uberjar-name "vbr-gerador-docs.jar"
   :profiles {:uberjar {:aot      :all
                        :jvm-opts ["-Dcljfx.skip-javafx-initialization=true"]}})
