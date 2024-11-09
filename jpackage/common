@@ -1,6 +1,6 @@
 --input dist
---main-jar hn.jar
---name "cljfx-hn"
+--main-jar vbr-generate-docs-0.1.0.jar
+--name "vbr-generate-docs"
 --main-class clojure.main
 --arguments -m
---arguments hn.core
+--arguments editor.core

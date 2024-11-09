@@ -7,6 +7,5 @@
   :repl-options {:init-ns editor.core
                  :init    (require '[clojure.repl :refer :all])}
   :main editor.core
-  :source-paths ["src/clj"]
   :profiles {:uberjar {:aot      :all
                        :jvm-opts ["-Dcljfx.skip-javafx-initialization=true"]}})
