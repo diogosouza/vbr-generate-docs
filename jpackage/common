@@ -1,5 +1,5 @@
 --input dist
---main-jar vbr-generate-docs-0.1.0.jar
+--main-jar vbr-generate-docs.jar
 --name "vbr-generate-docs"
 --main-class clojure.main
 --arguments -m
