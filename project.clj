@@ -1,4 +1,4 @@
-(defproject vbr-generate-docs "0.1.0-SNAPSHOT"
+(defproject vbr-generate-docs "0.1.0"
   :description "Vem Brincar de Roda - Gerador de Documentos"
   :dependencies [[org.clojure/clojure "1.11.1"]
                  [org.clojure/core.cache "1.1.234"]

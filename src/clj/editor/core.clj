@@ -8,6 +8,7 @@
   (:use [clj-pdf.core])
   (:import (java.time LocalDate)
            (java.util Locale)
+           (javafx.application Platform)
            (javafx.scene.control ToggleGroup)))
 
 (defn get-version [& _]
@@ -400,8 +401,9 @@
                          :content      {:fx/type tabs-view}}}}))
 
 ;; App
-(defn -main [& _]
+(defn -main []
   (Locale/setDefault (Locale/forLanguageTag "pt-BR"))
+  (Platform/setImplicitExit true)
   (fx/create-app *state
                  :event-handler events/event-handler
                  :desc-fn (fn [_] {:fx/type root-view})))
