@@ -2,5 +2,5 @@
         org.clojure/core.cache {:mvn/version "1.1.234"}
         cljfx {:mvn/version "1.9.3"}
         clj-pdf {:mvn/version "2.6.9"}}
- :aliases {:uberjar {:extra-deps {seancorfield/depstar {:mvn/version "2.1.303"}}
+ :aliases {:uberjar {:extra-deps {seancorfield/depstar {:mvn/version "0.10.5"}}
                      :main-opts ["-m" "hf.depstar.uberjar" "dist/vbr-generate-docs.jar"]}}}
