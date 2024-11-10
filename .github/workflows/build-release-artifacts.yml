@@ -13,6 +13,7 @@ jobs:
           java-version: '17'
       - uses: DeLaGuardo/setup-clojure@12.5
         with:
+          cli: 'latest'
           tools-deps: 'latest'
       - run: clj -T:build uber
       - run: jpackage @jpackage/common @jpackage/mac
