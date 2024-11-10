@@ -1,3 +1,4 @@
+--verbose
 --input dist
 --main-jar vbr-gerador-docs.jar
 --name "vbr-gerador-docs"
