@@ -33,7 +33,7 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
-      - run: iwr -useb download.clojure.org/install/win-install-1.12.0.1479.ps1 | iex
+      - run: iwr -useb download.clojure.org/install/win-install-1.10.1.536.ps1 | iex
       - run: clj -T:build uber
       - run: jpackage @jpackage/common @jpackage/windows
       - uses: actions/upload-release-asset@v1
