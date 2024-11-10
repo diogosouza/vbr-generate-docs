@@ -1,6 +1,6 @@
-{:deps {org.clojure/clojure {:mvn/version "1.11.1"}
-        org.clojure/core.cache {:mvn/version "1.1.234"}
-        cljfx {:mvn/version "1.9.3"}
-        clj-pdf {:mvn/version "2.6.9"}}
- :aliases {:uberjar {:extra-deps {com.github.seancorfield/depstar {:mvn/version "2.1.303"}}
-                     :main-opts ["-m" "hf.depstar.uberjar" "dist/vbr-gerador-docs.jar"]}}}
+{:deps    {org.clojure/clojure    {:mvn/version "1.11.1"}
+           org.clojure/core.cache {:mvn/version "1.1.234"}
+           cljfx/cljfx            {:mvn/version "1.9.3"}
+           clj-pdf/clj-pdf        {:mvn/version "2.6.9"}}
+ :aliases {:build {:deps       {io.github.clojure/tools.build {:git/tag "v0.10.5" :git/sha "2a21b7a"}}
+                   :ns-default build}}}
