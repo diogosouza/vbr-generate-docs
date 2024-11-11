@@ -31,7 +31,7 @@ jobs:
       - uses: DeLaGuardo/setup-clojure@12.5
         with:
           cli: 'latest'
-      - run: clojure -T:build uber
+      - run: clojure -A:uberjar
       - run: jpackage @jpackage/common @jpackage/windows
       - uses: actions/upload-artifact@v4
         with:

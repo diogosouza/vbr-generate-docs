@@ -3,4 +3,6 @@
            cljfx/cljfx            {:mvn/version "1.9.3"}
            clj-pdf/clj-pdf        {:mvn/version "2.6.9"}}
  :aliases {:build {:deps       {io.github.clojure/tools.build {:git/tag "v0.10.5" :git/sha "2a21b7a"}}
-                   :ns-default build}}}
+                   :ns-default build}}
+ :uberjar {:extra-deps {seancorfield/depstar {:mvn/version "0.5.2"}}
+           :main-opts  ["-m" "hf.depstar/uberjar" "dist/hn.jar"]}}
