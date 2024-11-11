@@ -2,6 +2,4 @@
 --input dist
 --main-jar vbr-gerador-docs.jar
 --name "vbr-gerador-docs"
---main-class clojure.main
---arguments -m
---arguments editor.core
+--main-class editor.core
