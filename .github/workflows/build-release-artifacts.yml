@@ -28,8 +28,10 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
-      - run: iwr -useb download.clojure.org/install/win-install-1.10.1.536.ps1 | iex
-      - run: clojure -A:uberjar
+      - uses: DeLaGuardo/setup-clojure@12.5
+        with:
+          cli: 'latest'
+      - run: clojure -M:uberjar
       - run: jpackage @jpackage/common @jpackage/windows
       - uses: actions/upload-artifact@v4
         with:
