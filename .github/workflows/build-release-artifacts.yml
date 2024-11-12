@@ -16,6 +16,7 @@ jobs:
           cli: 'latest'
       - run: clojure -T:build uber
       - run: jpackage @jpackage/common @jpackage/mac
+      - run: ls
       - uses: actions/upload-artifact@v4
         with:
           name: vbr-gerador-docs-1.0.dmg
@@ -33,6 +34,7 @@ jobs:
           cli: 'latest'
       - run: clojure -T:build uber
       - run: jpackage @jpackage/common @jpackage/windows
+      - run: ls
       - uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -51,6 +53,7 @@ jobs:
       - run: iwr -useb download.clojure.org/install/win-install-1.10.1.536.ps1 | iex
       - run: clojure -A:uberjar
       - run: jpackage @jpackage/common @jpackage/windows
+      - run: ls
       - uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
