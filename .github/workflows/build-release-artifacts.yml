@@ -34,7 +34,6 @@ jobs:
           cli: 'latest'
       - run: clojure -T:build uber
       - run: jpackage @jpackage/common @jpackage/windows
-      - run: ls -R
       - uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
