@@ -28,6 +28,7 @@
                            :num_pros       "2"
                            :total          ""
                            :down_payment   ""
+                           :payment_method "PIX"
                            :activities     [{:id 0, :activity "Massinha de Modelar", :checked false}
                                             {:id 1, :activity "Música", :checked false}
                                             {:id 2, :activity "Pintura Artística", :checked false}
