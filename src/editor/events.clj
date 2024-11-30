@@ -12,6 +12,15 @@
            (javafx.scene.input KeyCode KeyEvent MouseEvent)
            (javafx.stage DirectoryChooser)))
 
+(defn format-date-with-capitalized-day [date]
+  (let [formatted-date (str (.format (DateTimeFormatter/ofPattern "dd/MM/yyyy - EEEE") date))
+        index (.indexOf formatted-date " - ")]
+    (if (and (not= index -1) (< (+ index 3) (count formatted-date)))
+      (str (subs formatted-date 0 (+ index 3))
+           (clojure.string/capitalize (subs formatted-date (+ index 3) (+ index 4)))
+           (subs formatted-date (+ index 4)))
+      formatted-date)))
+
 (defn generate-pdf [data path]
   (pdf
     [{:font {:size 12 :family :justified}}
@@ -34,7 +43,7 @@
       [:chunk {:style :underline} "DO OBJETO:"]]
      [:paragraph "O presente contrato tem por objetivo a prestação de serviços especializados em recreação infantil por parte da CONTRATADA de acordo com os termos e condições detalhados neste contrato."]
      [:spacer]
-     [:paragraph [:chunk {:style :bold} "DATA DA FESTA: "] (str (.format (DateTimeFormatter/ofPattern "dd/MM/yyyy") (:date data)))]
+     [:paragraph [:chunk {:style :bold} "DATA DA FESTA: "] (format-date-with-capitalized-day (:date data))]
      [:paragraph [:chunk {:style :bold} "HORÁRIO DA FESTA: "] (:time_start data) " às " (:time_end data)]
      [:paragraph [:chunk {:style :bold} "ENDEREÇO DA FESTA: "] (:address data)]
      [:paragraph [:chunk {:style :bold} "QUANTIDADE DE CRIANÇAS: "] (:num_kids data)]
